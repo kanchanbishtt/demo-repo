@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EV Recharge Bunk System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<div class="sidebar">
+    <h1>⚡ EV Dashboard</h1>
+
+    <div class="stats">
+        <div class="stat">
+            <h3 id="totalEnergy">0 kWh</h3>
+            <p>Total Energy</p>
+        </div>
+        <div class="stat">
+            <h3 id="activeSessions">0</h3>
+            <p>Active Sessions</p>
+        </div>
+        <div class="stat">
+            <h3 id="revenue">₹0</h3>
+            <p>Total Revenue</p>
+        </div>
+    </div>
+
+    <div id="bunkList"></div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
