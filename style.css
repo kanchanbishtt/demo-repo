@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+}
+
+.sidebar {
+    width: 380px;
+    background: #1e293b;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #22d3ee;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background: #334155;
+    padding: 10px;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+#bunkList {
+    margin-top: 10px;
+}
+
+.bunk-card {
+    background: #334155;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.bunk-card:hover {
+    transform: translateY(-5px);
+}
+
+.available { border-left: 6px solid #22c55e; }
+.charging { border-left: 6px solid #facc15; }
+.offline { border-left: 6px solid #ef4444; }
+
+button {
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start { background: #22c55e; }
+.stop { background: #ef4444; color: white; }
+
+.progress-bar {
+    height: 8px;
+    background: #1e293b;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #22d3ee;
+    border-radius: 6px;
+    transition: width 0.5s;
+}
+
+#map {
+    flex: 1;
+}
