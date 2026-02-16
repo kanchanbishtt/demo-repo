@@ -4,14 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
-
 body {
     display: flex;
     height: 100vh;
     background: #0f172a;
     color: white;
 }
-
 .sidebar {
     width: 380px;
     background: #1e293b;
@@ -77,7 +75,6 @@ button {
     border-radius: 6px;
     margin-top: 8px;
 }
-
 .progress {
     height: 100%;
     width: 0%;
@@ -89,3 +86,4 @@ button {
 #map {
     flex: 1;
 }
+
